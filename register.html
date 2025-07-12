@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration</title>
+  <link rel="stylesheet" href="register.css">
+
+</head>
+<body>
+  
+  <form id="registrationForm">
+   <h2>User Registration</h2>
+
+  
+    <label>Full Name: <span class="required-star">*</span></label>
+    <input type="text" id="fullName" required>
+
+
+    <label>Email: <span class="required-star">*</span></label>
+    <input type="email" id="email" required>
+
+    
+    <label>Password: <span class="required-star">*</span></label>
+    <input type="password" id="password" required>
+
+  
+    <label>Confirm Password:<span class="required-star">*</span></label>
+    <input type="password" id="confirmPassword" required>
+
+ 
+    <label>Phone Number:<span class="required-star">*</span></label>
+    <input type="text" id="phone" maxlength="10" required>
+
+    
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="Male" required> Male
+    <input type="radio" name="gender" value="Female" required> Female
+    <input type="radio" name="gender" value="Other" required> Other
+
+   
+    <label>Date of Birth:<span class="required-star">*</span></label>
+    <input type="date" id="dob" required>
+
+  
+    <label>Address:<span class="required-star">*</span></label><br>
+    <textarea id="address" rows="3" required></textarea>
+
+  
+    <label>City:<span class="required-star">*</span></label>
+    <select id="city" required>
+      <option value="">Select City</option>
+      <option value="Delhi">Delhi</option>
+      <option value="Bangalore">Bangalore</option>
+      <option value="Chennai">Chennai</option>  
+      <option value="Kolkata">Kolkata</option>
+      <option value="Hyderabad">Hyderabad</option>    
+      <option value="Pune">Pune</option>
+      <option value="Ahmedabad">Ahmedabad</option>
+      <option value="Jaipur">Jaipur</option>
+      <option value="Lucknow">Lucknow</option>
+      <option value="Chandigarh">Chandigarh</option>
+      <option value="Noida">Noida</option>
+      <option value="Gurgaon">Gurgaon</option>
+      <option value="Nagpur">Nagpur</option>
+      <option value="Surat">Surat</option>
+      <option value="Vadodara">Vadodara</option>
+      <option value="Indore">Indore</option>
+      <option value="Bhopal">Bhopal</option>
+      <option value="Visakhapatnam">Visakhapatnam</option>
+      <option value="Coimbatore">Coimbatore</option>
+      <option value="Thane">Thane</option>
+      <option value="Kanpur">Kanpur</option>
+      <option value="Agra">Agra</option>
+      <option value="Mysore">Mysore</option>
+      <option value="Patna">Patna</option>
+      <option value="Jaipur">Jaipur</option>
+      <option value="Mumbai">Mumbai</option>
+      <option value="Roorkee">Roorkee</option>
+      <option value="Other">Other</option>
+    </select>
+
+   
+    <label>Skills Known:</label><br>
+    <input type="checkbox" name="skills" value="HTML"> HTML
+    <input type="checkbox" name="skills" value="CSS"> CSS
+    <input type="checkbox" name="skills" value="JavaScript"> JavaScript
+    <input type="checkbox" name="skills" value="React"> React
+    <input type="checkbox" name="skills" value="Node.js"> Node.js
+    <input type="checkbox" name="skills" value="Python"> Python
+    <input type="checkbox" name="skills" value="Java"> Java
+    <input type="checkbox" name="skills" value="C++"> C++
+    <input type="checkbox" name="skills" value="C#"> C#
+    <input type="checkbox" name="skills" value="PHP"> PHP
+    <input type="checkbox" name="skills" value="Ruby"> Ruby
+    <input type="checkbox" name="skills" value="Swift"> Swift
+    <input type="checkbox" name="skills" value="Go"> Go
+    <input type="checkbox" name="skills" value="Kotlin"> Kotlin
+    <input type="checkbox" name="skills" value="TypeScript"> TypeScript
+    <input type="checkbox" name="skills" value="Other"> Other
+
+  
+    <label>Upload Profile Picture:<span class="required-star">*</span></label>
+    <input type="file" id="profilePic" accept="image/*"><br>
+
+   
+    <input type="checkbox" id="terms" required><span class="required-star">*</span> I accept the terms and conditions<br>
+
+    <button type="submit">Register</button>
+
+    <p style="text-align:center ; margin-top:15px ;">
+      Already have an account?? <a href="login.html" style="color:#587fa8;"> Login here</a>
+    </p>
+  </form>
+
+  <script src="register.js"></script>
+</body>
+</html>
