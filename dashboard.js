@@ -1,10 +1,10 @@
-// Access restriction
+
 if (localStorage.getItem("isLoggedIn") !== "true") {
   alert("Please login first!");
   window.location.href = "login.html";
 }
 
-// Get user from localStorage
+
 const user = JSON.parse(localStorage.getItem("user"));
 
 if (user) {

@@ -1,12 +1,12 @@
 window.onload = function () {
-  // Show/Hide password toggle
+
   const toggle = document.getElementById("togglePass");
   toggle?.addEventListener("click", function () {
     const passInput = document.getElementById("loginPassword");
     passInput.type = passInput.type === "password" ? "text" : "password";
   });
 
-  // Login Form Submission
+ 
   document.getElementById("loginForm").addEventListener("submit", function (e) {
     e.preventDefault();
 

@@ -1,10 +1,10 @@
 document.getElementById("registrationForm").addEventListener("submit", function (e) {
-  e.preventDefault(); // prevent form from reloading
+  e.preventDefault(); 
 
-  // Clear old errors
+ 
   document.querySelectorAll(".error").forEach(el => el.classList.remove("error"));
 
-  // Gather values
+ 
   const fullName = document.getElementById("fullName").value.trim();
   const email = document.getElementById("email").value.trim();
   const password = document.getElementById("password").value;
@@ -20,7 +20,7 @@ document.getElementById("registrationForm").addEventListener("submit", function 
 
   let isValid = true;
 
-  // Validation functions
+
   function showError(id) {
     const field = document.getElementById(id);
     field.classList.add("error");
@@ -52,7 +52,7 @@ document.getElementById("registrationForm").addEventListener("submit", function 
     isValid = false;
   }
 
-  // DOB & Age check
+  
   const age = new Date().getFullYear() - new Date(dob).getFullYear();
   if (!dob || age < 18) {
     showError("dob");
@@ -78,7 +78,7 @@ document.getElementById("registrationForm").addEventListener("submit", function 
 
   if (!isValid) return;
 
-  // Convert profile pic to base64
+
   if (profilePic) {
     const reader = new FileReader();
     reader.onloadend = function () {
